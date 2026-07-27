@@ -1,0 +1,36 @@
+generated: '2026-07-19'
+method: searched
+source: live probes of /.well-known/ on goethena hosts
+hosts:
+- host: https://www.goethena.com
+  documents:
+  - path: /.well-known/oauth-authorization-server
+    status: 200
+    file: goethena-oauth-authorization-server.json
+    note: >-
+      OAuth 2.0 Authorization Server Metadata (RFC 8414) for the WordPress MCP
+      server exposed by the AI Engine plugin at /wp-json/mcp/v1 (scope "mcp").
+  - path: /.well-known/oauth-protected-resource
+    status: 200
+    file: goethena-oauth-protected-resource.json
+    note: OAuth 2.0 Protected Resource Metadata (RFC 9728) for the MCP resource /wp-json/mcp/v1/http.
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404
+- host: https://api.goethena.com
+  documents:
+  - path: /.well-known/security.txt
+    status: 404
+  - path: /.well-known/openid-configuration
+    status: 404
+  - path: /.well-known/oauth-authorization-server
+    status: 404
+  - path: /.well-known/api-catalog
+    status: 404
+  - path: /.well-known/ai-plugin.json
+    status: 404

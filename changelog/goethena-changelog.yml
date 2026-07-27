@@ -1,0 +1,27 @@
+generated: '2026-07-19'
+method: searched
+source: openapi/goethena-openapi-original.yml (info.description Changelog section)
+scheme: semver
+current_version: 1.3.0
+entries:
+- version: 1.3.0
+  breaking: false
+  highlights:
+  - Added filter parameters for learners (email, name).
+  - Added filter parameters for learner training modules (learnerStatus, trainingCampaignStatus).
+  - Added filter parameters for learner training campaigns (learnerStatus, trainingCampaignStatus).
+  - Added training campaign status field to training campaigns.
+- version: 1.2.0
+  breaking: true
+  highlights:
+  - Removed the separate language region property on learner.
+  - Adopted Unicode Common Locale Data Repository (CLDR) language formats.
+- version: 1.1.0
+  breaking: false
+  highlights:
+  - Added webhooks operations.
+  - Added support for the learner training campaign completed webhook.
+- version: 1.0.0
+  breaking: false
+  highlights:
+  - Initial release including learners, training campaigns, learner training campaigns, and learner training modules.

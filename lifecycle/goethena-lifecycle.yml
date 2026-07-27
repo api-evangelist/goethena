@@ -1,0 +1,24 @@
+generated: '2026-07-19'
+method: searched
+source:
+- openapi/goethena-openapi-original.yml
+- https://status.goethena.com
+versioning:
+  scheme: uri-path
+  current: v1
+  spec_version: 1.3.0
+  docs: https://api.goethena.com/docs/
+  detail: >-
+    Resources are served under /v1. The OpenAPI info.version tracks the API revision
+    (currently 1.3.0); see changelog/goethena-changelog.yml for the version history
+    embedded in the API description.
+deprecation:
+  policy_url: null
+  sunset_header: false
+  detail: No formal deprecation policy or RFC 8594 Sunset/Deprecation header support is documented.
+sla:
+  url: null
+  uptime_target: null
+status_page: https://status.goethena.com
+status_provider: Instatus
+deprecated_operations: []

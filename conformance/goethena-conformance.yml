@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/goethena-openapi-original.yml
+standards:
+- id: openapi-3.1
+  conforms: true
+  evidence: openapi field is 3.1.0
+- id: rfc7807-problem-details
+  conforms: true
+  evidence: error responses reference RFC 7807 Problem Details (title/detail/invalid-params)
+- id: rfc9457-problem-details
+  conforms: false
+  evidence: bodies are application/json, not application/problem+json; spec cites RFC 7807, not 9457
+- id: http-basic-auth
+  conforms: true
+  evidence: securitySchemes basic_auth is http/basic
+- id: oauth2
+  conforms: false
+  evidence: the REST API uses HTTP Basic; no oauth2 scheme in the OpenAPI
+- id: cursor-pagination
+  conforms: true
+  evidence: list endpoints use cursor + limit request params and data/limit/hasMore response envelope
+- id: webhooks
+  conforms: true
+  evidence: OpenAPI 3.1 webhooks object declares learnerTrainingCampaignCompleted; /v1/webhooks CRUD present
+- id: idempotency
+  conforms: false
+  evidence: no idempotency-key header/parameter documented

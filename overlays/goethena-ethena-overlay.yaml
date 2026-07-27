@@ -1,0 +1,25 @@
+overlay: 1.0.0
+info:
+  title: API Evangelist enhancements for Ethena API
+  version: 1.0.0
+extends: openapi/goethena-openapi-original.yml
+actions:
+- target: $.info
+  update:
+    x-apievangelist-enriched: '2026-07-19'
+    x-apievangelist-provider: goethena
+    x-apievangelist-auth: http-basic
+    x-apievangelist-pagination: cursor
+    x-apievangelist-error-format: rfc7807
+    x-apievangelist-webhooks: true
+- target: $.info
+  update:
+    x-apievangelist-artifacts:
+      authentication: authentication/goethena-authentication.yml
+      conventions: conventions/goethena-conventions.yml
+      errors: errors/goethena-problem-types.yml
+      lifecycle: lifecycle/goethena-lifecycle.yml
+      changelog: changelog/goethena-changelog.yml
+      data_model: data-model/goethena-data-model.yml
+      webhooks: asyncapi/goethena-webhooks.yml
+      skills: skills/_index.yml

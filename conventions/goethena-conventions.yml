@@ -1,0 +1,48 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/goethena-openapi-original.yml
+authentication:
+  style: http-basic
+  detail: >-
+    Authorization: Basic base64(username:apiKey). API keys are sales-provisioned.
+    See authentication/goethena-authentication.yml.
+pagination:
+  style: cursor
+  request_params:
+  - cursor
+  - limit
+  response_fields:
+  - data
+  - limit
+  - hasMore
+  detail: >-
+    List endpoints (learners, learner-training-campaigns, learner-training-modules,
+    training-campaigns, webhooks) return { limit, hasMore, data[] }; pass cursor to
+    page forward while hasMore is true.
+filtering:
+  detail: >-
+    Learners support filter params id, status, email, name. Learner training modules
+    and learner training campaigns support learnerStatus and trainingCampaignStatus
+    filters (added v1.3.0).
+idempotency:
+  supported: false
+  detail: >-
+    The Ethena API documents no idempotency-key header or parameter. POST createLearner
+    and createWebhook are not declared idempotent.
+versioning:
+  scheme: uri-path
+  current: v1
+  spec_version: 1.3.0
+  detail: All resources are served under the /v1 path prefix.
+error_envelope:
+  format: rfc7807
+  fields: [title, detail, invalid-params]
+  ref: errors/goethena-problem-types.yml
+webhooks:
+  supported: true
+  detail: >-
+    Webhooks are opt-in (enabled by sales) and managed via /v1/webhooks. One event
+    type is published: LEARNER_TRAINING_CAMPAIGN_COMPLETED. See asyncapi/goethena-webhooks.yml.
+rate_limiting:
+  documented: false
+  detail: No rate-limit headers or quotas are documented in the OpenAPI or docs.

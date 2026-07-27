@@ -1,0 +1,87 @@
+# Ethena: AI-Powered Compliance Training & Ethics Platform
+
+> Ethena builds AI compliance agents and modern training software that help companies run harassment prevention, code of conduct, and regulatory compliance training, manage disclosures and HR cases, monitor third-party risk, and keep policies enforced across the workforce, with a human always approving what the agents draft.
+
+This file follows the llms.txt standard (llmstxt.org) to help AI assistants and LLMs understand and accurately reference Ethena's products, content, and policies.
+
+## Agentic Compliance (flagship product line)
+
+- [Training Agent](https://www.goethena.com/platform/training-agent/): Builds and customizes compliance training from a company's real risk signals, disclosures, and policies.
+- [Disclosure Agent](https://www.goethena.com/platform/disclosure-agent/): Handles conflict-of-interest, gift, and outside-employment disclosures end to end, drafting responses for human approval.
+- [Policy Agent](https://www.goethena.com/platform/policy-agent/): Scans a company's policy library for gaps and outdated language and drafts updates for review.
+- [Third-Party Risk Agent](https://www.goethena.com/platform/third-party-risk-agent/): Continuously screens vendors and partners for ethics and compliance exposures.
+
+## Platform & Tools
+
+- [Platform Overview](https://www.goethena.com/platform/): Full tour of Ethena's compliance platform, including the AI agents, training delivery, reporting tools, and hotline.
+- [AI Features Hub](https://www.goethena.com/platform/ai-features-hub/): Glossary of Ethena's AI compliance features: each term defined, with how Ethena implements it.
+- [AI Compliance Advisor](https://www.goethena.com/ai-compliance-advisor/): On-site AI copilot that recommends training based on a company's profile.
+- [AI Training Builder](https://www.goethena.com/ai-training-builder/): Turns any PDF, slide deck, or policy into a full training course.
+- [AI Translations](https://www.goethena.com/platform/ai-translations/): AI-generated course translations and dubbing for global workforces.
+- [Assignment Automation](https://www.goethena.com/assignment-automation/): Automated rules for assigning and tracking training by role, location, and hire date.
+- [Policy Bot](https://www.goethena.com/platform/policy-bot/): Chatbot that answers employee policy questions from a company's own approved policies.
+- [Ethics / Employee Hotline](https://www.goethena.com/platform/employee-hotline/): Anonymous misconduct and ethics reporting hotline.
+- [HR Case Management](https://www.goethena.com/platform/hr-case-management/): Case intake, tracking, and resolution workflow for HR and compliance teams.
+- [Kiosk & Classroom Mode](https://www.goethena.com/platform/kiosk-classroom-mode/): Shared-device and in-person training delivery for frontline and retail teams.
+- [Phishing Simulator](https://www.goethena.com/platform/phishing-simulator/): Simulated phishing campaigns for security-awareness testing.
+- [Reporting & Analytics](https://www.goethena.com/platform/analytics-insights/): Dashboards on completion rates, risk areas, and program effectiveness.
+- [Integrations](https://www.goethena.com/platform/integrations/): HRIS and SSO integrations, including Lattice and Vanta.
+- [LMS Essentials](https://www.goethena.com/platform/lms-essentials/): Core learning-management-system features included with Ethena.
+- [Training & Course Management](https://www.goethena.com/platform/training-course-management/): Admin tools for scheduling, tracking, and managing training programs.
+
+## Courses
+
+- [Course Library](https://www.goethena.com/courses/): Full catalog of Ethena's 200+ compliance and workplace training courses.
+- [Code of Conduct Training](https://www.goethena.com/code-of-conduct-courses/): Global and region-specific code of conduct courses, including APAC, LatAm, and financial services versions.
+- [Preventing Harassment & Discrimination](https://www.goethena.com/harassment-prevention-courses/): Harassment prevention training meeting US state, Canadian, and international requirements.
+- [Diversity, Equity & Inclusion](https://www.goethena.com/diversity-equity-inclusion/): DEIB and unconscious-bias training courses.
+- [Data Privacy & HIPAA](https://www.goethena.com/data-privacy-courses/): Data privacy training covering GDPR, CCPA, COPPA, and role-based HIPAA courses.
+- [Cybersecurity Awareness](https://www.goethena.com/cybersecurity-awareness-courses/): Regional cybersecurity awareness training for North America, LatAm, EMEA, and APAC.
+- [Anti-Bribery & Corruption](https://www.goethena.com/anti-bribery-and-corruption-courses/): ABAC and FCPA training, including third-party and industry-specific versions.
+- [Anti-Money Laundering](https://www.goethena.com/anti-money-laundering-courses/): AML training by region and industry, from fintech to casinos to retail banking.
+- [Financial Integrity & Regulatory Compliance](https://www.goethena.com/financial-integrity-and-regulatory-compliance-courses/): Courses on fraud prevention, tax evasion, and financial regulation.
+- [Market Integrity & Fair Dealing](https://www.goethena.com/market-integrity-courses/): Insider trading, antitrust, market abuse, and fair dealing courses.
+- [Workplace Health & Safety](https://www.goethena.com/workplace-health-and-safety-courses/): OSHA, OHS, and workplace violence prevention training by jurisdiction.
+- [Export Controls & Sanctions](https://www.goethena.com/export-controls-courses/): Training on export controls, sanctions, and trade compliance.
+- [Whistleblower & Reporting](https://www.goethena.com/whistleblower-reporting-courses/): Speak-up culture and whistleblower protection training.
+- [Human Resources](https://www.goethena.com/human-resources-courses/): Management skills and HR compliance courses.
+- [Corporate Ethics & Organizational Integrity](https://www.goethena.com/corporate-ethics-courses/): Ethical management and organizational integrity training.
+
+## Company
+
+- [About Us](https://www.goethena.com/about-us/): Ethena's mission, story, and leadership team.
+- [Customers](https://www.goethena.com/customers/): Customer stories and case studies.
+- [Pricing](https://www.goethena.com/pricing-plans/): Plans for compliance training, employee hotline, and LMS, priced to scale with team size.
+- [Contact Us / Request a Demo](https://www.goethena.com/platform/contact-us/): Talk to the Ethena team or book a demo.
+- [FAQs](https://www.goethena.com/faqs/): Common questions about Ethena's products, pricing, and implementation.
+- [Careers](https://www.goethena.com/about-us/careers/): Open roles at Ethena.
+- [Press](https://www.goethena.com/about-us/press/): Press coverage and media resources.
+- [Investors & Advisors](https://www.goethena.com/about-us/investors-and-advisors/): Ethena's investors and advisory board.
+
+## Resources
+
+- [Blog](https://www.goethena.com/blog/): Compliance news, regulatory updates, and HR guidance.
+- [Glossary](https://www.goethena.com/glossary/): Definitions of compliance, HR, and legal terms.
+- [Quarterly Compliance Round-up: June 2026](https://www.goethena.com/post/quarterly-compliance-round-up-june-2026/): Roundup of ethics and compliance enforcement and rulemaking from March to June 2026.
+- [What the Proposed HIPAA Security Rule Changes Mean for Your Training Program](https://www.goethena.com/post/what-the-proposed-hipaa-security-rule-changes-mean-for-your-training-program/): Analysis of the proposed HIPAA Security Rule changes and what they mean for role-based training.
+- [Webinar: The HIPAA Security Rule Is Changing. Is Your Training Program Ready?](https://www.goethena.com/post/hipaa-security-rule-changes-role-based-training-webinar/): Webinar on preparing training programs for the HIPAA Security Rule changes.
+- [Webinar: 3 AI Use Cases Your Compliance Program Can Actually Run](https://www.goethena.com/post/webinar-ai-use-cases-compliance-program/): Webinar on practical AI use cases for compliance teams.
+- [California Consumer Privacy Act (CCPA)](https://www.goethena.com/glossary/ccpa/): Glossary definition of the CCPA.
+- [California Privacy Rights Act (CPRA)](https://www.goethena.com/glossary/cpra/): Glossary definition of the CPRA.
+- [Quid Pro Quo Harassment](https://www.goethena.com/glossary/quid-pro-quo-harassment/): Glossary definition of quid pro quo harassment.
+- [Reasonable Accommodation](https://www.goethena.com/glossary/reasonable-accommodation/): Glossary definition of reasonable accommodation.
+
+## Legal
+
+- [Privacy Policy](https://www.goethena.com/legal/privacy-policy/)
+- [AI Terms of Use](https://www.goethena.com/legal/ai-terms-of-use/)
+- [Sub-Processors](https://www.goethena.com/legal/sub-processors/)
+- [Cookies Policy](https://www.goethena.com/legal/cookies-policy/)
+- [Website Accessibility Statement](https://www.goethena.com/legal/website-accessibility-statement/)
+
+## Optional
+
+- [Full course catalog (all categories)](https://www.goethena.com/course_category-sitemap.xml)
+- [Full glossary index](https://www.goethena.com/glossary-sitemap.xml)
+- [Full blog post index](https://www.goethena.com/post-sitemap.xml)
+- [XML sitemap index](https://www.goethena.com/sitemap_index.xml)

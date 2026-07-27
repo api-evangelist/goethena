@@ -1,0 +1,61 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/goethena-openapi-original.yml
+format: rfc7807
+envelope:
+  media_type: application/json
+  schema: RFC 7807 Problem Details (title required; detail; invalid-params[])
+  note: >-
+    The spec declares application/json bodies whose schema references RFC 7807 Problem
+    Details (title, detail, and an invalid-params[] array of {name, reason} for
+    validation errors). Bodies are not served as application/problem+json.
+problems:
+- status: 400
+  title: Bad Request
+  detail: The request was malformed or failed validation; invalid-params[] lists offending fields.
+  applies_to:
+  - getLearners
+  - createLearner
+  - getLearnerById
+  - patchLearnerById
+  - deleteLearnerById
+  - getLearnerTrainingCampaigns
+  - getLearnerTrainingCampaignById
+  - getLearnerTrainingModules
+  - getLearnerTrainingModuleById
+  - getTrainingCampaigns
+  - getTrainingCampaignById
+  - getWebhooks
+  - createWebhook
+  - getWebhookById
+  - patchWebhookById
+  - deleteWebhookById
+  - triggerWebhookById
+- status: 401
+  title: Unauthorized
+  detail: Missing or invalid HTTP Basic credentials (username + API key).
+  applies_to: [all operations]
+- status: 403
+  title: Forbidden
+  detail: The authenticated caller is not permitted to access webhooks operations (webhooks must be enabled for the account).
+  applies_to:
+  - getWebhooks
+  - createWebhook
+  - getWebhookById
+  - patchWebhookById
+  - deleteWebhookById
+  - triggerWebhookById
+- status: 404
+  title: Not Found
+  detail: The referenced resource (learner, campaign, module, or webhook) does not exist.
+  applies_to:
+  - getLearnerById
+  - patchLearnerById
+  - deleteLearnerById
+  - getLearnerTrainingCampaignById
+  - getLearnerTrainingModuleById
+  - getTrainingCampaignById
+  - getWebhookById
+  - patchWebhookById
+  - deleteWebhookById
+  - triggerWebhookById

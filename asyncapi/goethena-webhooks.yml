@@ -1,0 +1,28 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/goethena-openapi-original.yml (webhooks object + /v1/webhooks operations)
+delivery:
+  style: http-callback
+  enablement: opt-in (webhooks must be enabled for the account by Ethena)
+  management_api: /v1/webhooks
+  management_operations:
+  - getWebhooks
+  - createWebhook
+  - getWebhookById
+  - patchWebhookById
+  - deleteWebhookById
+  - triggerWebhookById
+  subscription_fields:
+    url: HTTPS callback URL (uri, max 2048 chars) invoked when the event fires
+    type: event type; currently only LEARNER_TRAINING_CAMPAIGN_COMPLETED
+events:
+- name: LEARNER_TRAINING_CAMPAIGN_COMPLETED
+  openapi_webhook: learnerTrainingCampaignCompleted
+  operationId: learnerTrainingCampaignCompletedWebhook
+  description: Fired when a learner completes a training campaign.
+  payload:
+    required: [learnerId, trainingCampaignId, statusTimestamp]
+    fields:
+      learnerId: Unique identifier of the learner.
+      trainingCampaignId: Unique identifier of the training campaign.
+      statusTimestamp: Date and time the completion status was recorded.

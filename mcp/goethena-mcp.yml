@@ -1,0 +1,26 @@
+generated: '2026-07-19'
+method: searched
+status: published
+source: https://www.goethena.com/.well-known/oauth-protected-resource
+server:
+  name: goethena-wordpress
+  transport: http
+  url: https://www.goethena.com/wp-json/mcp/v1/http
+  powered_by: AI Engine (Meow Apps) WordPress MCP plugin
+  documentation: https://meowapps.com/ai-engine/
+  note: >-
+    Ethena's marketing site (WordPress) publishes a Model Context Protocol server via
+    the AI Engine plugin. It exposes site content/tools over MCP, discoverable through
+    OAuth 2.0 Authorization Server Metadata and Protected Resource Metadata. This is a
+    content/site MCP surface, distinct from the Ethena REST API (api.goethena.com),
+    which has no dedicated hosted MCP server.
+auth:
+  type: oauth2
+  authorization_server: https://www.goethena.com/wp-json/mcp/v1
+  authorization_endpoint: https://www.goethena.com/wp-json/mcp/v1/oauth/authorize
+  token_endpoint: https://www.goethena.com/wp-json/mcp/v1/oauth/token
+  registration_endpoint: https://www.goethena.com/wp-json/mcp/v1/oauth/register
+  grant_types_supported: [authorization_code, refresh_token]
+  code_challenge_methods_supported: [S256]
+  scopes_supported: [mcp]
+tools: []

@@ -1,0 +1,22 @@
+{
+  "provider": "goethena",
+  "sources": [
+    "goethena-learner-training-campaigns-api-openapi.yml",
+    "goethena-learner-training-modules-api-openapi.yml",
+    "goethena-learners-api-openapi.yml",
+    "goethena-training-campaigns-api-openapi.yml",
+    "goethena-webhooks-api-openapi.yml"
+  ],
+  "outputs": [
+    "goethena-learner-training-campaigns-api-openapi.yml",
+    "goethena-learner-training-modules-api-openapi.yml",
+    "goethena-learners-api-openapi.yml",
+    "goethena-training-campaigns-api-openapi.yml",
+    "goethena-webhooks-api-openapi.yml"
+  ],
+  "archived": [],
+  "errors": [],
+  "warnings": [],
+  "notes": [],
+  "skipped": []
+}

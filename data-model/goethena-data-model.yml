@@ -1,0 +1,63 @@
+generated: '2026-07-19'
+method: derived
+source: openapi/goethena-openapi-original.yml
+entities:
+- name: Learner
+  id_field: id
+  id_pattern: ^[a-zA-Z0-9]+$
+  fields: [id, name, email, status, country, isManager, language, trainingUrl]
+  enums:
+    status: [ACTIVE, DEACTIVATED, TERMINATED]
+  operations: [getLearners, createLearner, getLearnerById, patchLearnerById, deleteLearnerById]
+- name: TrainingCampaign
+  id_field: id
+  id_pattern: ^[a-zA-Z0-9]+$
+  fields: [id, status]
+  operations: [getTrainingCampaigns, getTrainingCampaignById]
+- name: LearnerTrainingCampaign
+  id_field: id
+  fields: [id, trainingCampaignId, learnerId, enrollmentStatus, completionStatus, nextTrainingAt, deadline]
+  operations: [getLearnerTrainingCampaigns, getLearnerTrainingCampaignById]
+- name: LearnerTrainingModule
+  id_field: id
+  fields: [id, trainingCampaignId, learnerId, moduleName, lengthInMinutes, assignedAt, status, statusUpdatedAt]
+  operations: [getLearnerTrainingModules, getLearnerTrainingModuleById]
+- name: Webhook
+  id_field: id
+  fields: [id, url, type]
+  enums:
+    type: [LEARNER_TRAINING_CAMPAIGN_COMPLETED]
+  operations: [getWebhooks, createWebhook, getWebhookById, patchWebhookById, deleteWebhookById, triggerWebhookById]
+relationships:
+- from: LearnerTrainingCampaign
+  to: Learner
+  kind: belongs_to
+  via: learnerId
+- from: LearnerTrainingCampaign
+  to: TrainingCampaign
+  kind: belongs_to
+  via: trainingCampaignId
+- from: LearnerTrainingModule
+  to: Learner
+  kind: belongs_to
+  via: learnerId
+- from: LearnerTrainingModule
+  to: TrainingCampaign
+  kind: belongs_to
+  via: trainingCampaignId
+- from: Learner
+  to: LearnerTrainingCampaign
+  kind: has_many
+  via: learnerId
+- from: Learner
+  to: LearnerTrainingModule
+  kind: has_many
+  via: learnerId
+- from: TrainingCampaign
+  to: LearnerTrainingCampaign
+  kind: has_many
+  via: trainingCampaignId
+- from: TrainingCampaign
+  to: LearnerTrainingModule
+  kind: has_many
+  via: trainingCampaignId

@@ -1,0 +1,16 @@
+generated: '2026-07-19'
+method: generated
+api: openapi/goethena-openapi-original.yml
+skills:
+- file: goethena-manage-learners.md
+  name: Manage learners
+  api: openapi/goethena-openapi-original.yml
+  operations: [getLearners, createLearner, getLearnerById, patchLearnerById, deleteLearnerById]
+- file: goethena-track-training-completion.md
+  name: Track training completion
+  api: openapi/goethena-openapi-original.yml
+  operations: [getTrainingCampaigns, getLearnerTrainingCampaigns, getLearnerTrainingCampaignById, getLearnerTrainingModules, getLearnerTrainingModuleById]
+- file: goethena-manage-webhooks.md
+  name: Manage webhooks
+  api: openapi/goethena-openapi-original.yml
+  operations: [getWebhooks, createWebhook, getWebhookById, patchWebhookById, deleteWebhookById, triggerWebhookById]

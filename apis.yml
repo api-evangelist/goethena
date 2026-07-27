@@ -1,7 +1,29 @@
 aid: goethena
 name: Goethena
-description: Goethena is a company surfaced as a portfolio company of felicis and added to the API Evangelist
-  network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Ethena (goethena.com) is an AI-powered compliance training and ethics platform
+  used by 2,000+ organizations to run harassment prevention, code of conduct, data
+  privacy, anti-bribery, and regulatory compliance programs across their workforce.
+  Its Agentic Compliance product line pairs AI agents (Training, Disclosure, Policy,
+  and Third-Party Risk) with a 200+ course library, an employee ethics hotline, HR
+  case management, assignment automation, and reporting — with a human always
+  approving what the agents draft. Ethena exposes a REST API (api.goethena.com) for
+  managing learners, training campaigns, learner training campaigns and modules, and
+  webhooks, so customers can sync roster and training-completion data with their HRIS
+  and downstream systems. Backed by Felicis.
+accessModel:
+  pricing: unknown
+  onboarding: self-serve
+  trial: false
+  try_now: false
+  public: false
+  label: Self-serve signup
+  confidence: medium
+  source:
+  - authentication
+  generated: '2026-07-22'
+  method: derived
+image: https://www.goethena.com/wp-content/uploads/2025/12/Ethenas-Featured-Image.png
 url: https://raw.githubusercontent.com/api-evangelist/goethena/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,15 +33,169 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
-apis: []
+- Compliance
+- Training
+- Human Resources
+- Ethics
+- Learning Management
+- AI Agents
+- Governance
+- Workforce
+apis:
+- aid: goethena:goethena-learner-training-campaigns-api
+  name: Goethena Learner Training Campaigns API
+  description: Learner training campaign information and operations.
+  humanURL: https://api.goethena.com/docs/
+  baseURL: https://api.goethena.com
+  tags:
+  - Learner Training Campaigns
+  properties:
+  - type: OpenAPI
+    url: openapi/goethena-learner-training-campaigns-api-openapi.yml
+  - type: Documentation
+    url: https://api.goethena.com/docs/
+  - type: APIReference
+    url: https://api.goethena.com/docs/
+- aid: goethena:goethena-learner-training-modules-api
+  name: Goethena Learner Training Modules API
+  description: Learner training module information and operations.
+  humanURL: https://api.goethena.com/docs/
+  baseURL: https://api.goethena.com
+  tags:
+  - Learner Training Modules
+  properties:
+  - type: OpenAPI
+    url: openapi/goethena-learner-training-modules-api-openapi.yml
+  - type: Documentation
+    url: https://api.goethena.com/docs/
+  - type: APIReference
+    url: https://api.goethena.com/docs/
+- aid: goethena:goethena-learners-api
+  name: Goethena Learners API
+  description: Learner information and operations.
+  humanURL: https://api.goethena.com/docs/
+  baseURL: https://api.goethena.com
+  tags:
+  - Learners
+  properties:
+  - type: OpenAPI
+    url: openapi/goethena-learners-api-openapi.yml
+  - type: Documentation
+    url: https://api.goethena.com/docs/
+  - type: APIReference
+    url: https://api.goethena.com/docs/
+- aid: goethena:goethena-training-campaigns-api
+  name: Goethena Training Campaigns API
+  description: Training campaign information and operations.
+  humanURL: https://api.goethena.com/docs/
+  baseURL: https://api.goethena.com
+  tags:
+  - Training Campaigns
+  properties:
+  - type: OpenAPI
+    url: openapi/goethena-training-campaigns-api-openapi.yml
+  - type: Documentation
+    url: https://api.goethena.com/docs/
+  - type: APIReference
+    url: https://api.goethena.com/docs/
+- aid: goethena:goethena-webhooks-api
+  name: Goethena Webhooks API
+  description: "Webhooks are not enabled by default, please work with your sales representative to have\
+    \ them enabled if you need them.\n\nOnce you have access, webhooks can be managed through the API.\
+    \ Currently, only the following webhooks are supported:\n  - Learner Training Campaign Completed\n\
+    \n# Security\n\nRequests to the webhook URL include a header `X-Signature`, which contains a signature\
+    \ of the payload. This signature is generated using the secret key provided when the webhook was created.\n\
+    \n## Signature Verification \n\nTo verify the signature of incoming requests, you need the secret\
+    \ key for a webhook. This key can be retrieved by calling `GET /v1/webhooks/{id}` after webhook creation.\
+    \ The secret key is not returned in the create webhook response. This key is used to generate a signature\
+    \ of the payload and compare it with the `X-Signature` header in the request.\n\nThe signature is\
+    \ generated using the **HMAC SHA-256** algorithm. The **secret key** is used as the key, and the **request\
+    \ payload** is used as the data. The resulting HMAC is then converted into a hexadecimal string.\n\
+    \nFor example:\n\n```js\nconst crypto = require('crypto');\n\nconst signature = crypto\n  .createHmac('sha256',\
+    \ secretKey) \n  .update(JSON.stringify(payload))\n  .digest('hex');\n```\n\nIn this example:\n\n\
+    1. `secretKey` is the secret key that can be retrieved by calling `GET /v1/webhooks/{id}` after webhook\
+    \ creation.\n1. `payload` is the data you receive in the webhook request (usually in JSON format).\n\
+    1. The `crypto.createHmac()` function creates a hash object, which uses the SHA-256 algorithm and\
+    \ the `secretKey` as the key.\n1. `update()` adds the stringified payload to the hash.\n1. `digest('hex')`\
+    \ generates the HMAC hash in hexadecimal format, which can be compared to the `X-Signature` header\
+    \ in the request.\n\n\n# Retry Policy\n\nWebhook requests will be attempted up to **three times**,\
+    \ with a retry interval of **five minutes**, before being considered failed.\n\nA **30-second request\
+    \ timeout** is enforced, meaning the webhook request must complete within 30 seconds. If the request\
+    \ exceeds this timeout, the attempt will be considered failed."
+  humanURL: https://api.goethena.com/docs/
+  baseURL: https://api.goethena.com
+  tags:
+  - Webhooks
+  properties:
+  - type: OpenAPI
+    url: openapi/goethena-webhooks-api-openapi.yml
+  - type: Documentation
+    url: https://api.goethena.com/docs/
+  - type: APIReference
+    url: https://api.goethena.com/docs/
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/goethena-domain-security.yml
 - type: Website
   url: https://goethena.com
+- type: Documentation
+  url: https://api.goethena.com/docs/
+- type: APIReference
+  url: https://api.goethena.com/docs/
+- type: Blog
+  url: https://www.goethena.com/blog/
+- type: Support
+  url: https://help.goethena.com/hc/en-us
+- type: GitHubOrganization
+  url: https://github.com/goethena
+- type: Pricing
+  url: https://www.goethena.com/pricing-plans/
+- type: Login
+  url: https://api.goethena.com/login
+- type: SignUp
+  url: https://www.goethena.com/platform/contact-us/
+- type: TermsOfService
+  url: https://app.goethena.com/legal-and-privacy
+- type: PrivacyPolicy
+  url: https://www.goethena.com/legal/privacy-policy/
+- type: LLMsTxt
+  url: llms/goethena-llms.txt
+- type: WellKnown
+  url: well-known/goethena-well-known.yml
+- type: MCPServer
+  url: mcp/goethena-mcp.yml
+- type: Authentication
+  url: authentication/goethena-authentication.yml
+- type: Conventions
+  url: conventions/goethena-conventions.yml
+- type: ErrorCatalog
+  url: errors/goethena-problem-types.yml
+- type: Lifecycle
+  url: lifecycle/goethena-lifecycle.yml
+- type: StatusPage
+  url: https://status.goethena.com
+- type: ChangeLog
+  url: changelog/goethena-changelog.yml
+- type: Conformance
+  url: conformance/goethena-conformance.yml
+- type: DataModel
+  url: data-model/goethena-data-model.yml
+- type: Webhooks
+  url: asyncapi/goethena-webhooks.yml
+- type: AsyncAPI
+  url: asyncapi/goethena-events-asyncapi.yml
+- type: AgentSkill
+  url: skills/_index.yml
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
