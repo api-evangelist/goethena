@@ -128,6 +128,8 @@ apis:
   humanURL: https://api.goethena.com/docs/
   baseURL: https://api.goethena.com
   tags:
+  - Webhook
+  tags_raw:
   - Webhooks
   properties:
   - type: OpenAPI
