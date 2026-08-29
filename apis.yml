@@ -11,6 +11,18 @@ description: >-
   managing learners, training campaigns, learner training campaigns and modules, and
   webhooks, so customers can sync roster and training-completion data with their HRIS
   and downstream systems. Backed by Felicis.
+deliveryModel:
+  model: saas
+  open_source: false
+  commercial: true
+  callable_host: true
+  label: Hosted service · you call their endpoint
+  confidence: high
+  source:
+  - openapi
+  - pricing
+  generated: '2026-08-28'
+  method: derived
 accessModel:
   pricing: unknown
   onboarding: self-serve
