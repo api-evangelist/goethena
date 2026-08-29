@@ -1,11 +1,7 @@
 {
   "provider": "goethena",
   "sources": [
-    "goethena-learner-training-campaigns-api-openapi.yml",
-    "goethena-learner-training-modules-api-openapi.yml",
-    "goethena-learners-api-openapi.yml",
-    "goethena-training-campaigns-api-openapi.yml",
-    "goethena-webhooks-api-openapi.yml"
+    "_original/goethena-openapi-original.yml"
   ],
   "outputs": [
     "goethena-learner-training-campaigns-api-openapi.yml",
@@ -17,6 +13,15 @@
   "archived": [],
   "errors": [],
   "warnings": [],
-  "notes": [],
-  "skipped": []
+  "notes": [
+    "sourced from openapi/_original/ (1 archived document(s)); previously refined output at the top level was skipped rather than re-split",
+    "goethena-openapi-original.yml: upgraded openapi 3.1.0 -> OpenAPI 3.2.0"
+  ],
+  "skipped": [
+    "goethena-learner-training-campaigns-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "goethena-learner-training-modules-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "goethena-learners-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "goethena-training-campaigns-api-openapi.yml: previously refined output, superseded by openapi/_original/",
+    "goethena-webhooks-api-openapi.yml: previously refined output, superseded by openapi/_original/"
+  ]
 }
