@@ -1,0 +1,47 @@
+slug: goethena
+provider: Goethena
+generated_by: planning/capability-mapping/scripts/classify_capabilities.py
+model: claude-opus-5
+frame:
+- Education
+min_confidence: 0.7
+capability_model:
+  source: https://github.com/vincentmakes/turbo-ea-capabilities
+  license: CC-BY-4.0
+  attribution: Turbo EA Capabilities by Vincent Verdet — Turbo EA, https://github.com/vincentmakes/turbo-ea-capabilities,
+    CC BY 4.0
+  notice: NOTICE
+edge_count: 3
+edges:
+- tag: Training Campaigns
+  spec_file: goethena-training-campaigns-api-openapi.yml
+  capability_id: BC-300.40
+  capability_id_l1: BC-300
+  capability_name: Learning & Development Management
+  confidence: 0.78
+  evidence: GET /v1/training-campaigns getTrainingCampaigns 'Get training campaigns'; API 'allows you
+    to view and manage learners and training information'
+  reason: Vendor runs workforce compliance training programmes; the tag exposes training campaigns assigned
+    to learners (employees), which is corporate Learning & Development delivery rather than academic curriculum.
+    Some chance a grader prefers Compliance Management, hence not higher.
+- tag: Learner Training Campaigns
+  spec_file: goethena-learner-training-campaigns-api-openapi.yml
+  capability_id: BC-300.40
+  capability_id_l1: BC-300
+  capability_name: Learning & Development Management
+  confidence: 0.72
+  evidence: GET /v1/learner-training-campaigns  Get learner training campaigns — "view and manage learners
+    and training information"
+  reason: 'Reads assignment and status of workforce compliance-training campaigns per learner: training
+    administration for employees, i.e. Learning & Development Management. Content is compliance-themed,
+    but the operations expose training delivery records rather than compliance programme management.'
+- tag: Learner Training Modules
+  spec_file: goethena-learner-training-modules-api-openapi.yml
+  capability_id: BC-300.40
+  capability_id_l1: BC-300
+  capability_name: Learning & Development Management
+  confidence: 0.72
+  evidence: GET /v1/learner-training-modules  Get learner training modules; filter parameters for "learner
+    training modules (learnerStatus, trainingCampaignStatus)"
+  reason: Per-learner training module completion status within a corporate training platform — employee
+    training administration under Learning & Development.
