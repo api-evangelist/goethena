@@ -60,6 +60,9 @@ tags:
 - AI Agents
 - Governance
 - Workforce
+- Governance Risk and Compliance
+- Workflows
+- Webhook
 apis:
 - aid: goethena:goethena-learner-training-campaigns-api
   name: Goethena Learner Training Campaigns API
@@ -221,6 +224,10 @@ common:
   url: asyncapi/goethena-events-asyncapi.yml
 - type: AgentSkill
   url: skills/_index.yml
+- type: Documentation
+  url: https://help.goethena.com/hc/en-us/articles/28796851013773-Ethena-s-API
+- type: Website
+  url: https://www.goethena.com
 x-enrichment:
   date: '2026-07-19'
   status: backfilled
