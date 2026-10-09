@@ -7,14 +7,17 @@ front_door_ai:
   probed_at: '2026-09-17'
   host: goethena.com
   final_host: www.goethena.com
-  ownership: inherited
+  ownership: own
   owner: goethena
   shares_host_with: null
-  inherited_from: www.goethena.com
+  inherited_from: null
+  alias_of: www.goethena.com
   verdict: scored
-  score: null
+  score: 11
+  band: 5
+  band_label: prominent
   host_score: 11
-  density: null
+  density: 10.23
   words: 1075
   tiers:
     agentic: 2
