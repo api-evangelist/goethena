@@ -64,6 +64,135 @@
 > Full detail: **[Where this data comes from](https://apievangelist.com/about/where-our-data-comes-from)**
 <!-- API-EVANGELIST-PROVENANCE:END -->
 
-Goethena is a company surfaced as a portfolio company of felicis and added to the API Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+Ethena (goethena.com) is an AI-powered compliance training and ethics platform used by 2,000+ organizations to run harassment prevention, code of conduct, data privacy, anti-bribery, and regulatory compliance programs across their workforce. Its Agentic Compliance product line pairs AI agents (Training, Disclosure, Policy, and Third-Party Risk) with a 200+ course library, an employee ethics hotline, HR case management, assignment automation, and reporting — with a human always approving what the agents draft. Ethena exposes a REST API (api.goethena.com) for managing learners, training campaigns, learner training campaigns and modules, and webhooks, so customers can sync roster and training-completion data with their HRIS and downstream systems. Backed by Felicis.
 
-Backed by: felicis — https://goethena.com
+**Areas:** Company · Compliance · Training · Human Resources · Ethics · LMS · AI Agents · Governance · Workforce · Governance Risk and Compliance · Workflows · Webhook
+
+## Goethena on APIs.io
+
+Everything profiled for Goethena is published on APIs.io rather than in this repository. Start at the provider page — **[apis.io/providers/goethena/](https://apis.io/providers/goethena/)** — or go straight to one of the APIs or properties below.
+
+### APIs (5)
+
+- [Goethena Learner Training Campaigns API](https://apis.io/apis/goethena/goethena-learner-training-campaigns-api/) — Learner training campaign information and operations.
+- [Goethena Learner Training Modules API](https://apis.io/apis/goethena/goethena-learner-training-modules-api/) — Learner training module information and operations.
+- [Goethena Learners API](https://apis.io/apis/goethena/goethena-learners-api/) — Learner information and operations.
+- [Goethena Training Campaigns API](https://apis.io/apis/goethena/goethena-training-campaigns-api/) — Training campaign information and operations.
+- [Goethena Webhooks API](https://apis.io/apis/goethena/goethena-webhooks-api/) — Webhooks are not enabled by default, please work with your sales representative to have them enabled if you need them. Once you have access, webhooks can be…
+
+### Published properties
+
+Each property below is a page on APIs.io carrying the machine-readable artifact and what it says.
+
+#### AsyncAPI (2)
+
+Event-driven and webhook contracts.
+
+- [Ethena Webhooks](https://apis.io/asyncapis/goethena/goethena-events-asyncapi/)
+- [Goethena Webhooks](https://apis.io/asyncapis/goethena/goethena-webhooks/)
+
+#### Event channels (1)
+
+Individual events and webhooks the provider emits.
+
+- [{subscriberCallbackUrl}](https://apis.io/channels/goethena/subscribercallbackurl/)
+
+#### MCP servers (1)
+
+Model Context Protocol servers that expose the API to agents.
+
+- [goethena-wordpress](https://apis.io/servers/goethena/goethena-wordpress/)
+
+#### Collections (5)
+
+Postman and Open Collection request collections.
+
+- [Ethena Learner Training Campaigns API](https://apis.io/collections/goethena/open-goethena-learner-training-campaigns-api/)
+- [Ethena Learner Training Campaigns Learner Training Modules API](https://apis.io/collections/goethena/open-goethena-learner-training-modules-api/)
+- [Ethena Learner Training Campaigns Learners API](https://apis.io/collections/goethena/open-goethena-learners-api/)
+- [Ethena Learner Training Campaigns API](https://apis.io/collections/goethena/open-goethena-training-campaigns-api/)
+- [Ethena Learner Training Campaigns Webhooks API](https://apis.io/collections/goethena/open-goethena-webhooks-api/)
+
+#### Overlays (1)
+
+OpenAPI overlays, including conversational phrasing for each operation.
+
+- [Goethena Ethena Overlay](https://apis.io/overlays/goethena/goethena-ethena-overlay/)
+
+#### Security (2)
+
+Authentication, trust centre, and vulnerability disclosure.
+
+- [Goethena Authentication](https://apis.io/security/goethena/goethena-authentication/)
+- [Goethena Domain Security](https://apis.io/security/goethena/goethena-domain-security/)
+
+## Where to find this API
+
+Links to the company's own pages. This repository publishes no copy of their specifications — the canonical document is theirs and lives at the URLs below.
+
+- [Website](https://goethena.com)
+- [Documentation](https://api.goethena.com/docs/)
+- [API reference](https://api.goethena.com/docs/)
+- [Pricing](https://www.goethena.com/pricing-plans/)
+- [Sign up](https://www.goethena.com/platform/contact-us/)
+- [Support](https://help.goethena.com/hc/en-us)
+- [Blog](https://www.goethena.com/blog/categories/articles/)
+- [Terms of service](https://app.goethena.com/legal-and-privacy)
+- [Privacy policy](https://www.goethena.com/legal/privacy-policy/)
+- [GitHub](https://github.com/goethena)
+- [Status](https://status.goethena.com)
+
+## API Evangelist rating
+
+**Kin Score 45.3** — developing · rubric 0.25.0 · scored 2026-10-23
+
+| Facet | Score |
+|---|---|
+| Discoverability | 75.0 |
+| Contract quality | 64.6 |
+| Contract governance | 4.5 |
+| Operational transparency | 34.2 |
+| Developer ergonomics | 37.5 |
+| Access clarity | 44.7 |
+
+**Agent readiness 46.0** — agent-ready (gated down from agent-native)
+
+| Agent-readiness dimension | Result |
+|---|---|
+| Spec Presence | yes |
+| Agentic Access | — |
+| Reversibility Documented | — |
+| MCP Server | platform (partial credit) |
+| Auth Clarity | served (partial credit) |
+| Idempotency | — |
+| Error Semantics | derived (partial credit) |
+| OpenAPI Examples | verified |
+| Rate Limit Signal | — |
+| Event Surface Described | yes |
+| Agent Skills | derived (partial credit) |
+| Well Known Catalog | — |
+| Consent Identity | — |
+| Agent Card | — |
+| Dry Run Mode | — |
+| Delegated Identity | served (partial credit) |
+| Protected Resource Metadata | verified |
+| Dynamic Client Registration | yes |
+| Agentic Commerce | — |
+| Pagination Ratio | na |
+| Operation Distinctiveness | distinct |
+
+**Regulatory alignment 24.5** — Education & Research
+
+The rubric is published at [github.com/api-evangelist/kin-score](https://github.com/api-evangelist/kin-score). The per-check breakdown behind these numbers — which checks were earned, partial or missed — along with score history and how this provider compares to its peers, is available at [apis.io/providers/goethena/](https://apis.io/providers/goethena/).
+
+## How this profile is made
+
+API Evangelist profiles a company's public API surface the way a developer would find it: the website, developer portal and documentation, the specifications it publishes, its public repositories, and its pricing, status and changelog pages. From that it derives the properties above — contracts split per API, workflows, schemas, collections, governance rules, plans and rate limits — and scores them against the published [Kin Score rubric](https://github.com/api-evangelist/kin-score).
+
+The artifacts are published on [APIs.io](https://apis.io), not in this repository. This repository is the public record for Goethena: the place to say something is wrong, missing or out of date, and to ask for a re-score or a removal.
+
+## Open an issue
+
+- **Something about this listing** — a wrong description, a missing API, a stale artifact or a question about the rating: [open an issue on this repository](https://github.com/api-evangelist/goethena/issues/new).
+- **A new API, or one that is not in the catalog yet** — [submit it on APIs.io](https://apis.io/add/).
+- **Anything else** — [the APIs.io inbox](https://github.com/api-search/inbox/issues/new) or [info@apievangelist.com](mailto:info@apievangelist.com).
